@@ -1,11 +1,11 @@
 import ShowForm from './components/ShowForm/ShowForm';
-import ShowCard from './components/ShowCard/ShowCard';
+import { Outlet } from 'react-router-dom';
 
 const Shows = () => {
   return (
     <div>
       <ShowForm />
-      <ShowCard />
+      <Outlet />
     </div>
   );
 };
