@@ -39,7 +39,27 @@ const ShowForm = () => {
               setInputValue(newInputValue);
             }}
             renderInput={(params) => (
-              <TextField {...params} variant="outlined" />
+              <TextField
+                {...params}
+                variant="outlined"
+                sx={{
+                  '& .MuiOutlinedInput-root': {
+                    borderRadius: '8px',
+                    '& fieldset': {
+                      borderColor: 'white',
+                    },
+                    '&:hover fieldset': {
+                      borderColor: 'white',
+                    },
+                    '&.Mui-focused fieldset': {
+                      borderColor: 'white',
+                    },
+                    '& input': {
+                      color: 'white',
+                    },
+                  },
+                }}
+              />
             )}
           />
         </div>
